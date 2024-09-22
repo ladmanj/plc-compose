@@ -1,0 +1,9 @@
+http://plc.rpi5:80 {
+	# Could be another domain/IP as well
+	reverse_proxy plc-openplc.plc_default:8081
+}
+http://scada.rpi5:80 {
+	# Could be another domain/IP as well
+	rewrite / /Scada-LTS/{uri}
+	reverse_proxy plc-scada.plc_default:8080
+}
