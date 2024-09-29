@@ -1,6 +1,6 @@
 http://plc.rpi5:80 {
 	# Could be another domain/IP as well
-	reverse_proxy plc-openplc.plc_default:8081
+	reverse_proxy plc-openplc.plc_default:8080
 }
 http://scada.rpi5:80 {
 	# Could be another domain/IP as well
